@@ -1,0 +1,329 @@
+// All stylings are nested in the simple_container class.
+// Most stylings are applied directly to the element types, except the styling of links, which is wrapped in a button class.
+// These styles are absolutely meant to be edited, if the user wishes to do so.
+
+
+// general
+html, body {
+  height: 100%;
+  margin-bottom: 600px;
+}
+
+body {
+  margin-bottom: 22px;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  @media (min-width: 500px){ padding-top: 15px; }
+  @media (max-width: 500px){ padding: 15px 10px 0px 10px; } // varying padding
+  a{
+    color: grey; }
+  .notice{
+    color: red;
+    position: fixed;
+    top: 5px;
+    text-decoration: underline;}}
+
+// header
+.owl_header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: black;
+  background-color: #F7F7F7;
+  border-bottom: 2px solid lightgrey;
+  text-align: center;
+  .links{
+    color: #565E64;
+    margin: 0 6px;
+    text-decoration: none;
+    font-size: 19px;
+    padding-right: 5px;
+  }
+}
+
+// signup loader
+.signup_loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  text-align: center;
+  background: #F7EEE5;
+  img{
+    width: 165px;
+    height: auto;
+    margin-top: 100px;}
+  h2{
+    margin-top: 18px;}}
+
+
+// header
+.simple_header{
+  @media (min-width: 760px){ position: fixed; }
+  @media (max-width: 760px){ position: absolute; }
+  top: 18px;
+  right: 26px;}
+
+
+// container
+.simple_container{
+  @media (min-width: 500px){ width: 500px; }
+  @media (max-width: 500px){ width: 100%; } // varying width
+  margin: 50px auto;
+
+  // h1
+  h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;}
+
+  // h2
+  h2{
+    font-size: 29px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+
+  // h3
+  h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;}
+
+  // h4
+  h4{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #eee;}
+
+  // p
+  p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;}
+
+  // hr
+  hr{
+    height: 1px;
+    color: #eee;
+    margin-top: 30px;
+    margin-bottom: 30px;}
+
+  // img
+  img{
+    width: 80%;
+    height: auto;
+    margin: 15px 10% 15px 10%;}
+
+  // ul
+  ul{
+    margin-bottom: 30px;
+    li{
+      font-size: 16px;
+      line-height: 1.6;}}
+
+  // ol
+  ol{
+    margin-bottom: 30px;
+    li{
+      font-size: 16px;
+      line-height: 1.6;}}
+
+  // links
+  .button{
+    text-align: center;
+    padding: 30px 0px 25px 0px;
+    a{
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid black;
+      @media (min-width: 500px){ padding: 10px 75px; }
+      @media (max-width: 500px){ padding: 13px 80px; }} // varying button size
+    a:hover { background-color: orange; }}
+
+
+  .project_phase{
+    font-size: 19px;
+    padding: 39px 25px;
+    text-align: center;
+    background-color: #FBF7F0;
+    position: relative;
+    #update_link{
+      font-size: 11px;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+    }
+  }
+
+  .milestone{
+    font-size: 19px;
+    padding: 39px 25px;
+    text-align: center;
+    background-color: #FBF7F0;
+    position: relative;
+    #update_link{
+      font-size: 11px;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;    }
+  }
+
+  .feature_button{
+    a{
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid black;
+      display: block;
+      width: 96%;
+      padding: 10px 0px;
+      text-align: center;
+      padding-top: 14px;
+      padding-bottom: 15px;
+      padding-left: 8px;
+      margin-top: 7px;
+      font-size: 18px;
+      background-color: #F7EFE7;
+    }
+    a:hover{
+      background-color: orange;
+    }
+  }
+
+  .user_show_container{
+    width: 100%;
+    margin-bottom: 40px;
+
+    .user_info{
+      height: 95px;
+      img{
+        height: 95px;
+        width: auto;
+        display: inline;
+        float: left;
+        margin: 0px;
+        margin-right: 12px;
+        border: 1px solid lightGrey;
+      }
+    }
+    .contact_links{
+      text-align: left;
+      width: 100%;
+
+      .links_container{
+        position: relative;
+        right: 108px;
+      }
+    }
+  }
+
+
+  // h4 in forms
+  form h4{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 0px;}
+
+  // textfield
+  input[type=text], input[type=password]{
+    width: 355px;
+    height: 36px;
+    margin-bottom: 0px;
+    border: 2px solid #eee;
+    border-radius: 6px;}
+
+  // submit
+  input[type=submit]{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 20px;
+    @media (min-width: 500px){ padding: 10px 75px; }
+    @media (max-width: 500px){ padding: 13px 80px; }} // varying button size
+
+  input[type=submit]:hover{
+    background-color: orange;
+    cursor: pointer;}
+
+  // textarea
+  textarea{
+    width: 100%;
+    height: 90px;}
+
+  // placeholder texts
+  ::-webkit-input-placeholder {
+    font-size: 16px;}
+
+  .underline{
+    text-decoration: underline;
+  }
+}
+
+// buttom right button
+.bottom_right_button{
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 11px 42px;
+    border: 1px black solid;
+    margin-bottom: 4px;
+    float: right;
+    border-radius: 3px;
+  }
+  a:hover{
+    background-color: #E49362;
+  }
+  @media (max-width: 1300px){
+    display: none;
+  }
+}
+
+// made with love
+.with_love{
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: grey;
+}
+
+// debug
+.debug_area{
+  position: fixed;
+  bottom: 5px;
+  left: 5px;}
+
+// logo
+.simple_logo{
+  position: fixed;
+  top: 5px;
+  left: 12px;
+  @media (max-width: 790px){ display: none; }} // point at whch not to show logo so that it doesnt clash with header
+

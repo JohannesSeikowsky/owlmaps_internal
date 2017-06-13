@@ -1,0 +1,47 @@
+<h1> Project OwlMaps </h1>
+
+<p> <strong> Project Phase </strong> </p>
+<!-- <p> <strong> Project Phase </strong> what are we principally trying to do? </p> -->
+<p class="project_phase">
+    <%= @current_phase %> <br> <%= link_to "set next phase", edit_phase_path(@phase), id: "update_link" %>
+</p>
+
+<p> <strong> Next Milestone </strong> </p>
+<!-- <p> <strong> Next Milestone </strong> - what is the very next thing ahead? </p> -->
+<p class="milestone" >
+    <%= @current_milestone %> <br> <%= link_to "set next milestone", edit_milestone_path(@milestone), id: "update_link" %>
+</p>
+
+<br>
+<p> <strong> Rolling Check-Ins </strong> </p>
+<p style="text-decoration: underline; text-align: center;">
+    Rolling Check-ins for all Team members are set to happen on Monday, Wednesday and Friday.
+</p>
+<br>
+
+<p> <strong> Team & Current Responsibility Distribution </strong> </p>
+
+<div style="width: 170px; float: left;">
+    <%= image_tag "oleg.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
+</div>
+<div style="width: 300px; min-height: 200px; float: left;">
+    <strong> Oleg </strong>
+    <p> <%= @status_oleg %> <br> <%= link_to "update", edit_status_path(1) %> </p>
+ </div>
+
+<div style="width: 170px; float: left;">
+    <%= image_tag "johannes.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
+</div>
+<div style="width: 300px; min-height: 200px; float: left;">
+    <strong> Johannes </strong>
+    <p> <%= @status_johannes %> <br> <%= link_to "update", edit_status_path(2) %> </p>
+ </div>
+
+<div style="width: 170px; float: left;">
+    <%= image_tag "yoni.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
+</div>
+<div style="width: 300px; min-height: 200px; float: left;">
+    <strong> Yoni </strong>
+    <p> <%= @status_yoni %> <br> <%= link_to "update", edit_status_path(3) %> </p>
+ </div>
+
