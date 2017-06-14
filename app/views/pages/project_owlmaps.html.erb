@@ -1,6 +1,6 @@
 <h1> Project OwlMaps </h1>
 
-<p> <strong> Current Phase </strong> </p>
+<p> <strong> Project Phase </strong> </p>
 <!-- <p> <strong> Project Phase </strong> what are we principally trying to do? </p> -->
 <p class="project_phase">
     <%= @current_phase %> <br> <%= link_to "set next phase", edit_phase_path(@phase), id: "update_link" %>
@@ -19,7 +19,7 @@
 </p>
 <br>
 
-<p> <strong> Current Responsibility Distribution </strong> </p>
+<p> <strong> Team & Current Responsibility Distribution </strong> </p>
 
 <div style="width: 170px; float: left;">
     <%= image_tag "oleg.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
@@ -27,7 +27,7 @@
 <div style="width: 300px; min-height: 200px; float: left;">
     <span style="text-decoration: underline;"> Oleg </span>
     <p> <%= @status_oleg %> <br>
-    <%= link_to "adjust your current resposibility.", edit_status_path(1), style: "font-size: 12px;" %> </p>
+    <%= link_to "adjust your current resposibility", edit_status_path(1), style: "font-size: 12px;" %> </p>
  </div>
 
 <div style="width: 170px; float: left;">
@@ -36,7 +36,7 @@
 <div style="width: 300px; min-height: 200px; float: left;">
     <span style="text-decoration: underline;"> Johannes </span>
     <p> <%= @status_johannes %> <br>
-    <%= link_to "adjust your current resposibility.", edit_status_path(2), style: "font-size: 12px;" %> </p>
+    <%= link_to "adjust your current resposibility", edit_status_path(2), style: "font-size: 12px;" %> </p>
  </div>
 
 <div style="width: 170px; float: left;">
@@ -45,5 +45,5 @@
 <div style="width: 300px; min-height: 200px; float: left;">
     <span style="text-decoration: underline;"> Yoni </span>
     <p> <%= @status_yoni %> <br>
-    <%= link_to "adjust your current resposibility,", edit_status_path(3), style: "font-size: 12px;" %> </p>
+    <%= link_to "adjust your current resposibility", edit_status_path(3), style: "font-size: 12px;" %> </p>
  </div>
