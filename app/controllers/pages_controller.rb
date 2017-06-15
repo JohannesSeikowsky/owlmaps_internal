@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    GeneralMailer.daily_habit().deliver
+    GeneralMailer.daily_mail().deliver
     redirect_to project_owlmaps_path
   end
 
