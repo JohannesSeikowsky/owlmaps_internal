@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def project_owlmaps
+    GeneralMailer.daily_habit_mail().deliver
     @phase = Phase.last
     @current_phase = @phase.content
     @milestone = Milestone.last
