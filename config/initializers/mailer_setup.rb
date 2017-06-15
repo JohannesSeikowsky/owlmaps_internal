@@ -1,3 +1,5 @@
+config.action_mailer.delivery_method = :smtp
+
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
@@ -9,3 +11,4 @@ ActionMailer::Base.smtp_settings = {
 }
 
 ActionMailer::Base.default_url_options[:host] = "https://omaps-internal.herokuapp.com/"
+
