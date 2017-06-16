@@ -20,30 +20,30 @@
   </div>
 <% end %>
 
-<br>
-<p class="project_phase">
-    All collected Checkins will be send out tomorrow to each team member.
-</p>
-
 <div class="checkin_sidebar">
     <h3> Responsibility Settings </h3>
     <div style="width: 300px; float: left;">
         <span style="text-decoration: underline;"> Oleg </span>
-        <p> <%= @status_oleg %> <%= link_to "edit", edit_status_path(1), style: "font-size: 11px;" %> </p>
+        <p> <%= @status_oleg %> <!-- <%= link_to "edit", edit_status_path(1), style: "font-size: 11px;" %> --> </p>
      </div>
 
     <div style="width: 300px; float: left;">
         <span style="text-decoration: underline;"> Johannes </span>
-        <p> <%= @status_johannes %> <%= link_to "edit", edit_status_path(2), style: "font-size: 11px;" %> </p>
+        <p> <%= @status_johannes %> <!-- <%= link_to "edit", edit_status_path(2), style: "font-size: 11px;" %> --></p>
     </div>
 
     <div style="width: 300px; float: left;">
         <span style="text-decoration: underline;"> Yoni </span>
-        <p> <%= @status_yoni %> <%= link_to "edit", edit_status_path(3), style: "font-size: 11px;" %> </p>
+        <p> <%= @status_yoni %> <!-- <%= link_to "edit", edit_status_path(3), style: "font-size: 11px;" %> --></p>
      </div>
 
     <div style="width: 300px; float: left;">
         <h3 style="margin-top: 20px;"> Project Phase </h3>
         <p> Hypothesis testing stage: Testing out whether OwlMaps as currently conceived is actually something that target customers are interested in. </p>
+    </div>
+
+    <div style="width: 300px; float: left;">
+        <h3 style="margin-top: 20px;"> Responses </h3>
+        <p> All collected Checkins will be send out tomorrow to each team member. </p>
     </div>
 </div>
