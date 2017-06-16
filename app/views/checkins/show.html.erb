@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First input:</strong>
+  <%= @checkin.first_input %>
+</p>
+
+<p>
+  <strong>Second input:</strong>
+  <%= @checkin.second_input %>
+</p>
+
+<p>
+  <strong>Third input:</strong>
+  <%= @checkin.third_input %>
+</p>
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>

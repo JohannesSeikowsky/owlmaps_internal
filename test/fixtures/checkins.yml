@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_input: MyText
+  second_input: MyText
+  third_input: MyText
+
+two:
+  first_input: MyText
+  second_input: MyText
+  third_input: MyText

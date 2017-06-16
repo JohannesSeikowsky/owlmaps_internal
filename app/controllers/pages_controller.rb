@@ -12,4 +12,20 @@ class PagesController < ApplicationController
     @status_johannes = Status.find(2).content
     @status_yoni = Status.find(3).content
   end
+
+  def checkin_oleg
+    @checkin = Checkin.new
+    @status_oleg = Status.find(1).content
+    @status_johannes = Status.find(2).content
+    @status_yoni = Status.find(3).content
+  end
+
+  def checkin_johannes
+  end
+
+  def checkin_yoni
+  end
+
+  def done
+  end
 end
