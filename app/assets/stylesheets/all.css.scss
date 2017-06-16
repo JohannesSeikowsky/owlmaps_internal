@@ -160,6 +160,14 @@ body {
       @media (max-width: 500px){ padding: 13px 80px; }} // varying button size
     a:hover { background-color: orange; }}
 
+  .checkin_sidebar{
+    width: 330px;
+    position: fixed;
+    top: 12px;
+    right: 5px;
+    @media (max-width: 1190px){ display: none; }
+  }
+
   .project_phase{
     font-size: 17px;
     padding: 22px 32px;

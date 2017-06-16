@@ -1,58 +1,49 @@
 <h3> Rolling Checkin - Oleg </h3>
 
-<p style="text-decoration: underline; margin-bottom: -12px;"> Current Project Phase </p>
-<p class="project_phase">
-    Hypothesis testing stage: Testing out whether OwlMaps as currently conceived is actually something that target customers are interested in.
-</p>
-
-<p style="text-decoration: underline; margin-bottom: -12px;"> Your responsibility is currently set to: </p>
-<p class="project_phase">
-    <%= @status_oleg %> <%= link_to "edit", edit_status_path(1), style: "font-size: 12px;" %> </p>
-</p>
-
 <%= form_for @checkin, path: checkins_path  do |f| %>
   <div class="field">
-  <p> What has been done/tried in that direction? </p>
-    <%= f.text_area :first_input, placeholder: "update" %>
+  <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Update </p>
+    <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your side? " %>
   </div>
   <div class="field">
-    <p> What are you planning/considering to do next? any ideas - vauge or not? </p>
-    <%= f.text_area :second_input, placeholder: "plans" %>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Plans </p>
+    <%= f.text_area :second_input, placeholder: "What are some things ahead you're planning to do/think maybe worth doing?" %>
   </div>
   <div class="field">
-  <p> What's floating around in your mind that maybe worth mentioning? </p>
-    <%= f.text_area :third_input, placeholder: "thoughts and considerations" %>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: General project thoughts </p>
+    <%= f.text_area :third_input, placeholder: "What are some considerations about the project, fully developed or not, that are currently floating around in your mind?" %>
     <%= f.hidden_field :team_member, :value => "oleg" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Done." %>
+  <div class="button" style="padding: 0px;">
+    <%= f.submit "Submit." %>
   </div>
 <% end %>
 
+<br>
+<p class="project_phase">
+    All collected Checkins will be send out tomorrow to each team member.
+</p>
 
-<!--
-<div style="width: 170px; float: left;">
-    <%= image_tag "oleg.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
-</div>
-<div style="width: 300px; min-height: 200px; float: left;">
-    <span style="text-decoration: underline;"> Oleg </span>
-    <p> <%= @status_oleg %> <br>
-    <%= link_to "adjust your current resposibility", edit_status_path(1), style: "font-size: 12px;" %> </p>
- </div>
+<div class="checkin_sidebar">
+    <h3> Responsibility Settings </h3>
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Oleg </span>
+        <p> <%= @status_oleg %> </p>
+     </div>
 
-<div style="width: 170px; float: left;">
-    <%= image_tag "johannes.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
-</div>
-<div style="width: 300px; min-height: 200px; float: left;">
-    <span style="text-decoration: underline;"> Johannes </span>
-    <p> <%= @status_johannes %> <br>
- </div>
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Johannes </span>
+        <p> <%= @status_johannes %> </p>
+    </div>
 
-<div style="width: 170px; float: left;">
-    <%= image_tag "yoni.jpg", style: "margin: 0 0 0 12px; border: 1px solid grey;"%>
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Yoni </span>
+        <p> <%= @status_yoni %> </p>
+     </div>
+
+    <div style="width: 300px; float: left;">
+        <h3 style="margin-top: 20px;"> Project Phase </h3>
+        <p> Hypothesis testing stage: Testing out whether OwlMaps as currently conceived is actually something that target customers are interested in. </p>
+    </div>
 </div>
-<div style="width: 300px; min-height: 200px; float: left;">
-    <span style="text-decoration: underline;"> Yoni </span>
-    <p> <%= @status_yoni %> <br>
- </div>
