@@ -1,0 +1,45 @@
+<h3> Rolling Checkin - Johannes </h3>
+
+<%= form_for @checkin, path: checkins_path  do |f| %>
+  <p style="background-color: #FBF7F0"> Current Project Phase: Hypothesis testing stage </p>
+  <div class="field">
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Update </p>
+    <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your side? " %>
+  </div>
+  <div class="field">
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Plans </p>
+    <%= f.text_area :second_input, placeholder: "What are some things ahead you're planning to do/think maybe worth doing?" %>
+  </div>
+  <div class="field">
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: General project thoughts </p>
+    <%= f.text_area :third_input, placeholder: "What are some considerations about the project, fully developed or not, that are currently floating around in your mind?" %>
+    <%= f.hidden_field :team_member, :value => "johannes" %>
+  </div>
+
+  <div class="button" style="padding: 0px;">
+    <%= f.submit "Submit." %>
+  </div>
+<% end %>
+
+<div class="checkin_sidebar">
+    <h3> Responsibility Settings </h3>
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Oleg </span>
+        <p> <%= @status_oleg %> <%= link_to "edit", edit_status_path(1), style: "font-size: 11px;" %> </p>
+     </div>
+
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Johannes </span>
+        <p> <%= @status_johannes %> <%= link_to "edit", edit_status_path(2), style: "font-size: 11px;" %> </p>
+    </div>
+
+    <div style="width: 300px; float: left;">
+        <span style="text-decoration: underline;"> Yoni </span>
+        <p> <%= @status_yoni %> <%= link_to "edit", edit_status_path(3), style: "font-size: 11px;" %> </p>
+     </div>
+
+    <div style="width: 300px; float: left;">
+        <h3 style="margin-top: 20px;"> Responses </h3>
+        <p> All collected Checkins will be send out tomorrow to each team member. </p>
+    </div>
+</div>
