@@ -5,7 +5,12 @@ namespace :mailer_tasks do
   end
 
   task owlmaps_checkins: :environment do
-    GeneralMailer.checkin_johannes.deliver
+    today = Time.now.strftime("%A")
+    if today == "Monday" || today == "Friday"
+        #GeneralMailer.checkin_oleg.deliver
+        GeneralMailer.checkin_johannes.deliver
+        #GeneralMailer.checkin_yoni.deliver
+    end
   end
 end
 
