@@ -8,14 +8,13 @@ namespace :mailer_tasks do
     day = Time.now.strftime("%A")
     if day == "Monday" || day == "Friday"
       GeneralMailer.checkin_oleg.deliver
-      GeneralMailer.checkin_johannes.deliver
+      GeneralMailer.checkin_johannes.del
       GeneralMailer.checkin_yoni.deliver
     else
       puts "nothing."
     end
   end
 end
-
 
 
 
