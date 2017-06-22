@@ -11,8 +11,12 @@
     <%= f.text_area :second_input, placeholder: "What are some things ahead you're planning to do/think maybe worth doing?" %>
   </div>
   <div class="field">
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Reflect </p>
+    <%= f.text_area :third_input, placeholder: "What is something we could do that would be effective but we aren't doing it yet?" %>
+  </div>
+  <div class="field">
     <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: General project thoughts </p>
-    <%= f.text_area :third_input, placeholder: "What are some considerations about the project, fully developed or not, that are currently floating around in your mind?", style: "height: 130px;" %>
+    <%= f.text_area :third_input, placeholder: "What are some considerations about the project, fully developed or not, that are currently floating around in your mind?" %>
     <%= f.hidden_field :team_member, :value => "johannes" %>
   </div>
 

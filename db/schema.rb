@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170616200114) do
+ActiveRecord::Schema.define(version: 20170622003145) do
 
   create_table "checkins", force: :cascade do |t|
     t.text     "first_input"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170616200114) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "team_member"
+    t.string   "fourth_input"
   end
 
   create_table "milestones", force: :cascade do |t|

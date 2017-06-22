@@ -69,6 +69,6 @@ class CheckinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def checkin_params
-      params.require(:checkin).permit(:first_input, :second_input, :third_input, :team_member)
+      params.require(:checkin).permit(:first_input, :second_input, :third_input, :fourth_input, :team_member)
     end
 end
