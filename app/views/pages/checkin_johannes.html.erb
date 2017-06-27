@@ -2,8 +2,8 @@
 
 <%= form_for @checkin, path: checkins_path  do |f| %>
   <p style="background-color: #FBF7F0; margin-bottom: 21px; padding: 3px 0px;">
-    OwlMaps Checkins is a weekly thing to keep team members up to date and to take a moment to take stock of the project's status quo
-    and reflect what may be done.
+    OwlMaps Checkins happen weekly to keep team members up to date and to take a moment to take stock of the project's status quo
+    and reflect on what may be done.
   </p>
   <div class="page_part">
     <p style="text-decoration: underline; margin-bottom: 5px;"> 1/4 - Update </p>
@@ -18,7 +18,7 @@
     <button type="button" onclick="next();"> Continue </button>
   </div>
   <div class="page_part">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> 3/4 - Gut and Curiosity </p>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> 3/4 - Gut Feeling </p>
     <%= f.text_area :third_input, placeholder: "Something you have recently come across that piqued your interest and seemed somehow relevant, but it's not quiet clear how..." %>
     <button type="button" onclick="next();"> Skip </button>
     <button type="button" onclick="next();"> Continue </button>
