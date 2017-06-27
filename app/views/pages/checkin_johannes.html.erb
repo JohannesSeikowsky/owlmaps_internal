@@ -1,7 +1,7 @@
 <h3> Rolling Checkin - Johannes </h3>
 
 <%= form_for @checkin, path: checkins_path  do |f| %>
-  <p style="background-color: #FBF7F0"> Project Phase: Tinkering out our product and target market. </p>
+  <p style="background-color: #FBF7F0"> Project Phase: Running the first product trial with Iman |<br> figuring out other promising customers/customer groups. </p>
   <div class="field">
     <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Update </p>
     <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your front?" %>
@@ -25,6 +25,8 @@
   </div>
 <% end %>
 
+
+<!--
 <div class="checkin_sidebar">
     <h3> Responsibility Settings </h3>
     <div style="width: 300px; float: left;">
@@ -47,3 +49,4 @@
         <p> All collected Checkins will be send out tomorrow to each team member. </p>
     </div>
 </div>
+-->
