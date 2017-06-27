@@ -163,8 +163,8 @@ body {
   .checkin_sidebar{
     width: 330px;
     position: fixed;
-    top: 45px;
-    right: 5px;
+    top: 52px;
+    right: 75px;
     @media (max-width: 1190px){ display: none; }
   }
 
@@ -192,7 +192,11 @@ body {
       font-size: 11px;
       position: absolute;
       bottom: 6px;
-      right: 6px;    }
+      right: 6px;}
+  }
+
+  .page_part{
+    display: none;
   }
 
   .feature_button{
