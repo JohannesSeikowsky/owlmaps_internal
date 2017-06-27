@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    redirect_to project_owlmaps_path
+    redirect_to checkin_oleg_path
   end
 
   def project_owlmaps

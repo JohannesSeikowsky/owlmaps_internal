@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  resources :checkins
   root 'pages#home'
-
   get '/project_owlmaps', to: "pages#project_owlmaps", via: "project_owlmaps"
 
   get '/checkin_oleg', to: 'pages#checkin_oleg', via: "checkin_oleg"
@@ -12,4 +10,5 @@ Rails.application.routes.draw do
   resources :milestones
   resources :phases
   resources :statuses
+  resources :checkins
 end

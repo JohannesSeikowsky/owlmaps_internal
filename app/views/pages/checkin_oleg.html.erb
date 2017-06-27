@@ -1,22 +1,25 @@
-<h3> Rolling Checkin - Oleg </h3>
+<h3> Owlmaps Checkin - Oleg </h3>
 
 <%= form_for @checkin, path: checkins_path  do |f| %>
-  <p style="background-color: #FBF7F0"> Project Phase: Running the first product trial with Iman |<br> figuring out other promising customers/customer groups. </p>
+  <p style="background-color: #FBF7F0">
+    OwlMaps Checkin is a weekly thing to keep team members up to date and to take a moment to take stock of the project's status quo
+    and reflect what may be done.
+  </p>
   <div class="field">
     <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Update </p>
     <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your front?" %>
   </div>
   <div class="field">
     <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Plans </p>
-    <%= f.text_area :second_input, placeholder: "What are some things ahead you're planning to do/consider doing?" %>
+    <%= f.text_area :second_input, placeholder: "What are some things ahead you are planning to do/consider doing?" %>
   </div>
   <div class="field">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Reflect </p>
-    <%= f.text_area :third_input, placeholder: "What is something effective we could do that we aren't doing yet?" %>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Gut and Curiosity </p>
+    <%= f.text_area :third_input, placeholder: "What have you recently come across that piqued your interest and you thought may be useful/relevant in some way, but you didn't quiet know how exactly?" %>
   </div>
   <div class="field">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Floating thoughts </p>
-    <%= f.text_area :fourth_input, placeholder: "What are some thoughts about the project, fully developed or not, that are currently floating around in your mind?" %>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Checkin: Mistakes - Elon's question </p>
+    <%= f.text_area :fourth_input, placeholder: "In which ways are we currently fucking up/missing out?" %>
     <%= f.hidden_field :team_member, :value => "oleg" %>
   </div>
 
@@ -25,27 +28,48 @@
   </div>
 <% end %>
 
-<!--
 <div class="checkin_sidebar">
-    <h3> Responsibility Settings </h3>
-    <div style="width: 300px; float: left;">
-        <span style="text-decoration: underline;"> Oleg </span>
-        <p> <%= @status_oleg %> <%= link_to "edit", edit_status_path(1), style: "font-size: 11px;" %> </p>
+     <div style="width: 300px; float: left;">
+        <h3 style="background-color: #FBF7F0; padding: 12px 0px;"> Basics </h3>
      </div>
 
-    <div style="width: 300px; float: left;">
-        <span style="text-decoration: underline;"> Johannes </span>
-        <p> <%= @status_johannes %> <%= link_to "edit", edit_status_path(2), style: "font-size: 11px;" %> </p>
-    </div>
-
-    <div style="width: 300px; float: left;">
-        <span style="text-decoration: underline;"> Yoni </span>
-        <p> <%= @status_yoni %> <%= link_to "edit", edit_status_path(3), style: "font-size: 11px;" %> </p>
+     <div style="width: 300px; float: left;">
+        <h3> Intervals </h3>
+        <p> OwlMaps Checkins are happening on Fridays. A summary of all answers of all team members will then be sent out the following Monday. </p>
      </div>
 
-    <div style="width: 300px; float: left;">
-        <h3 style="margin-top: 20px;"> Responses </h3>
-        <p> All collected Checkins will be send out tomorrow to each team member. </p>
-    </div>
+      <div style="width: 300px; float: left;">
+        <h3> Reminders </h3>
+        <p> Team members who provide no reponse in a given week will get one reminder on Sunday. </p>
+      </div>
+
+     <div style="width: 300px; float: left;">
+        <h3> Questions </h3>
+        <p>
+          The particular questions posed in the Checkin are evolving. To make a suggestion:
+          <a href="mailto:seikowsky@googlemail.com?Subject=Suggestion%20" target="_top"> Click here </a>
+        </p>
+     </div>
+
+      <!--
+      <div style="width: 300px; float: left;">
+          <span style="text-decoration: underline;"> Oleg </span>
+          <p> <%= @status_oleg %> <%= link_to "edit", edit_status_path(1), style: "font-size: 11px;" %> </p>
+      </div>
+
+      <div style="width: 300px; float: left;">
+          <span style="text-decoration: underline;"> Johannes </span>
+          <p> <%= @status_johannes %> <%= link_to "edit", edit_status_path(2), style: "font-size: 11px;" %> </p>
+      </div>
+
+      <div style="width: 300px; float: left;">
+          <span style="text-decoration: underline;"> Yoni </span>
+          <p> <%= @status_yoni %> <%= link_to "edit", edit_status_path(3), style: "font-size: 11px;" %> </p>
+       </div>
+
+      <div style="width: 300px; float: left;">
+          <h3 style="margin-top: 20px;"> Responses </h3>
+          <p> All collected Checkins will be send out tomorrow to each team member. </p>
+      </div>
+      -->
 </div>
--->
