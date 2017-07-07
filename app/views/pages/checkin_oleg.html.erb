@@ -1,31 +1,39 @@
 <h3> Checkin Oleg - <%= @date %> </h3>
 
 <%= form_for @checkin, path: checkins_path  do |f| %>
-  <p style="background-color: #FBF7F0; margin-bottom: 21px; padding: 3px 0px;">
-    OwlMaps Checkins happen weekly to keep team members up to date and to take a moment to take stock of the project's status quo
-    and reflect on what may be done.
-  </p>
+  <!--
+    <p style="background-color: #FBF7F0; margin-bottom: 21px; padding: 3px 0px;">
+      OwlMaps Checkins happen weekly to keep team members up to date and to take a moment to take stock of the project's status quo
+      and reflect on what may be done.
+    </p>
+  -->
+  <!--
+    <div class="page_part">
+      <p style="text-decoration: underline; margin-bottom: 5px;"> 1/4 - Update </p>
+      <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your front?" %>
+      <button type="button" onclick="next();"> Skip </button>
+      <button type="button" onclick="next();"> Continue </button>
+    </div>
+  -->
+  <!--
+    <div class="page_part">
+      <p style="text-decoration: underline; margin-bottom: 5px;"> 2/4 - Plans </p>
+      <%= f.text_area :second_input, placeholder: "What are some things ahead you are planning to do/consider doing next week?" %>
+      <button type="button" onclick="next();"> Skip </button>
+      <button type="button" onclick="next();"> Continue </button>
+    </div>
+  -->
+  <!--
+    <div class="page_part">
+      <p style="text-decoration: underline; margin-bottom: 5px;"> 3/4 - Gut & Curiosity </p>
+      <%= f.text_area :third_input, placeholder: "What have you recently come across that has piqued your interest and somehow seemed relevant/useful, even if not directly so?" %>
+      <button type="button" onclick="next();"> Skip </button>
+      <button type="button" onclick="next();"> Continue </button>
+    </div>
+  -->
   <div class="page_part">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> 1/4 - Update </p>
-    <%= f.text_area :first_input, placeholder: "What has been done/tried in the past couple of days on your front?" %>
-    <button type="button" onclick="next();"> Skip </button>
-    <button type="button" onclick="next();"> Continue </button>
-  </div>
-  <div class="page_part">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> 2/4 - Plans </p>
-    <%= f.text_area :second_input, placeholder: "What are some things ahead you are planning to do/consider doing next week?" %>
-    <button type="button" onclick="next();"> Skip </button>
-    <button type="button" onclick="next();"> Continue </button>
-  </div>
-  <div class="page_part">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> 3/4 - Gut & Curiosity </p>
-    <%= f.text_area :third_input, placeholder: "What have you recently come across that has piqued your interest and somehow seemed relevant/useful, even if not directly so?" %>
-    <button type="button" onclick="next();"> Skip </button>
-    <button type="button" onclick="next();"> Continue </button>
-  </div>
-  <div class="page_part">
-    <p style="text-decoration: underline; margin-bottom: 5px;"> 4/4 - Mistakes (Elon's question) </p>
-    <%= f.text_area :fourth_input, placeholder: "In which ways are we currently fucking up/missing out?" %>
+    <p style="text-decoration: underline; margin-bottom: 5px;"> Mistakes - Elon's question </p>
+    <%= f.text_area :fourth_input, placeholder: "What mistakes are you currently committing? In which ways are we currently fucking up/missing out?", style: "height: 111px;" %>
     <%= f.hidden_field :team_member, :value => "oleg" %>
     <div class="button" style="padding: 0px;">
       <%= f.submit "Done." %>
@@ -33,6 +41,7 @@
   </div>
 <% end %>
 
+<!--
 <div class="checkin_sidebar">
    <div style="width: 300px; float: left;">
       <h3> Basic Info </h3>
@@ -64,7 +73,7 @@
       </p>
    </div>
 </div>
-
+-->
 
 <script type="text/javascript">
   /* simulate wizard with js */
