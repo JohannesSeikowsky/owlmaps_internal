@@ -15,7 +15,7 @@ class GeneralMailer < ApplicationMailer
   end
 
   def checkin_johannes
-    mail(to: "seikowsky@gmail.com", subject: "Rolling Checkin - OwlMaps - Johannes")
+    mail(to: "seikowsky@gmail.com", subject: "Rolling Checkin - Johannes")
   end
 
   def checkin_yoni
