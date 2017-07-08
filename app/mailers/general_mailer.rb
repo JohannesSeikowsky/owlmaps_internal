@@ -6,7 +6,7 @@ class GeneralMailer < ApplicationMailer
     start_date =  Date.new(2017,6,12)
     difference_in_days = Date.today - start_date
     count = difference_in_days.to_i.to_s
-    @subject = "Another day of avoiding Television. Day: #{count}"
+    @subject = "Avoiding Television. Day: #{count}"
     mail(to: "seikowsky@gmail.com", subject: @subject)
   end
 
