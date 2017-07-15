@@ -11,14 +11,14 @@ class GeneralMailer < ApplicationMailer
   end
 
   def checkin_oleg
-      mail(to: "ogiberstein@gmail.com", subject: "Rolling Checkin - Oleg")
+      mail(to: "ogiberstein@gmail.com", subject: "Mistake Analysis - Elon's Question")
   end
 
   def checkin_johannes
-    mail(to: "seikowsky@gmail.com", subject: "Rolling Checkin - Johannes")
+    mail(to: "seikowsky@gmail.com", subject: "Mistake Analysis - Elon's Question")
   end
 
   def checkin_yoni
-    mail(to: "Svechinskyy@gmail.com", subject: "Rolling Checkin - Yoni")
+    mail(to: "Svechinskyy@gmail.com", subject: "Mistake Analysis - Elon's Question")
   end
 end
